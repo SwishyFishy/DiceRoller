@@ -227,6 +227,7 @@ namespace DiceRoller_v2
         // "Name already in use"                                                        -> User attempts to use one name for two distinct objects
         // "DiceCollections cannot contain themselves"                                  -> User attmepts to store a DiceCollection in itself
         // "Can't remove last face of a die"                                            -> User attempts to remove a face from a single-face die
+        // "No object selected"                                                         -> SelectedObject(.Object) is null when it needs an object
 
         // "Aborted by user"                                                            -> User declined query to continue execution after failed action
         // "File does not exist"                                                        -> A file the user entered does not exist
@@ -586,6 +587,9 @@ namespace DiceRoller_v2
 
             if (cmd.Length == 2 && cmd[1] != "quick")
                 return "Unrecognized parameter";
+
+            if (SelectedObject == null || SelectedObject.Object == null)
+                return "No object selected";
 
             // Roll
             // Roll Die

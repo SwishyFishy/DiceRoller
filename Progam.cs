@@ -13,7 +13,7 @@ public static class Program
     // -> params arg for <add>, <remove> to add/remove multiple objects/faces in one command
 
 
-    // Releasing a build
+    // RELEASING A BUILD
     // From DiceRoller_v2/
     // dotnet publish -c Release -r win-x64 -o publish
     // vpk pack --packId DiceRoller_SwishyFishy_Release --packVersion 1.0.0 --packDir publish --mainExe DiceRoller_v2.exe --packAuthors "Jonah Galloway-Fenwick" --packTitle DiceRoller
