@@ -16,5 +16,5 @@ public static class Program
     // Releasing a build
     // From DiceRoller_v2/
     // dotnet publish -c Release -r win-x64 -o publish
-    // vpk pack --packId DiceRoller_SwishyFishy_Release --packVersion 1.0.1 --packDir publish --mainExe DiceRoller_v2.exe --packAuthors "Jonah Galloway-Fenwick" --packTitle DiceRoller
+    // vpk pack --packId DiceRoller_SwishyFishy_Release --packVersion 1.0.0 --packDir publish --mainExe DiceRoller_v2.exe --packAuthors "Jonah Galloway-Fenwick" --packTitle DiceRoller
 }
