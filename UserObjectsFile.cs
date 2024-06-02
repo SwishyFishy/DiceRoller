@@ -36,6 +36,9 @@ namespace DiceRoller_v2
 
         public UserObjectsList Load()
         {
+            // Create UserPresets Directory if necessary
+            Directory.CreateDirectory("UserPresets");
+
             // Handle no input
             if (FileName == "")
                 return new UserObjectsList();
