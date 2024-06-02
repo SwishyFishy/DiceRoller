@@ -813,7 +813,6 @@ namespace DiceRoller_v2
                 "           <(string)name> <['+'/'-'(int)modifier]> <(int)faces>                    -> Creates a Die with the given name, modifier (defaults to +0), and number of faces valued 1, 2, ...\n" +
                 "           <(string)name> <['+'/'-'(int)modifier]> <(int)value> <(int)value> ...   -> Creates a Die with the given name, modifier (defaults to +0), and faces with the given values.\n" +
                 "delete                                                                             -> Deletes the selected item.\n" +
-                "hide                                                                               -> Hides the selected item. Hidden items don't print to the console." +
                 "list                                                                               -> Depending on whether the selected item is a Collection, a Die, or null, lists all contents, face values, or all items.\n" +
                 "modifier   <'+'/'-'(int)modifier>                                                  -> Sets the selected item's modifier to the given value.\n" +
                 "remove     <(string)name/(int)value>                                               -> Depending on whether the selected item is a Collection or a Die, removes the item or face value.\n" +
