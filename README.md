@@ -1,6 +1,6 @@
 # DiceRoller
 
-This is a console application designed for use in TTRPG settings. The app allows the creation of dice with any number of any-valued faces, plus a static modifier to the dice roll. Furthermore, dice can be combined into dice bags which can themselves be assigned a static modifier. Thus, any combination of dice, with any passive modifiers can be stored and executed as a single `roll` command.
+This is a console application designed for use in TTRPG settings. The app allows the creation of dice with any number of any-valued faces, plus a static modifier to the dice roll. Furthermore, dice can be combined into dice collections which can themselves be assigned a static modifier. Thus, any combination of dice, with any passive modifiers can be stored and executed as a single `roll` command.
 
 I created the app after playing a Bladesinger Wizard in a 5e D&D game. I'll use that character as an example. 
 
@@ -8,7 +8,7 @@ Suppose the character is 5th level with a magic Flametongue Rapier and 20 DEX, c
 
 ![diceroller dmeo](https://github.com/user-attachments/assets/968d9e11-bb1d-40aa-b7ef-32c146ff7ed7)
 
-The saved dice bag `BB_Flametongue` contains the Booming Blade d8, and a `Flametongue` dice bag. That dice bag contains the 2d6 and 1d8 required by the Flametongue item, and has a +5 modifier. With the `BB_Flametongue` object selected, executing `roll` recursively rolls the contained dice and each contained dice bag, and adds any static modifiers.
+The saved dice bag `BB_Flametongue` contains the Booming Blade d8, and a `Flametongue` dice collection. That dice collection contains the 2d6 and 1d8 required by the Flametongue item, and has a +5 modifier. With the `BB_Flametongue` object selected, executing `roll` recursively rolls the contained dice and each contained dice collection, and adds any static modifiers.
 
 Using the `help` command displays this syntax menu.
 
