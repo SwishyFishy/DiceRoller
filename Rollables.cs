@@ -97,7 +97,21 @@
         // Return a random face value
         public int Roll()
         {
-            return Values[Rnd.Next(Values.Length)] + Modifier;
+            // Roll the die
+            int result = Rnd.Next(Values.Length);
+
+            // Output a notification on Nat 20s
+            if (Values[result] == 20 && base.Name == "d20")
+            {
+                Console.BackgroundColor = ConsoleColor.Green;
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.WriteLine("Natural 20!");
+                Console.BackgroundColor = ConsoleColor.Black;
+                Console.ForegroundColor = ConsoleColor.White;
+            }
+
+            // Return roll
+            return Values[result] + Modifier;
         }
 
         // Return a stringified representation
